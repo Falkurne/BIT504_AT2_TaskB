@@ -7,9 +7,11 @@ import java.awt.Color;
    
    public class PongPanel extends JPanel implements ActionListener, KeyListener {
        
-      public PongPanel() {
-          setBackground(Color.BLACK);
-      }
+	  private final static Color BACKGROUND_COLOUR = Color.BLACK;
+	   
+	  public PongPanel() {
+	      setBackground(BACKGROUND_COLOUR);
+	  }
   
       @Override
       public void keyPressed(KeyEvent event) {
